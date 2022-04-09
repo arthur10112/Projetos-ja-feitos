@@ -1,43 +1,3 @@
-#include <stdio.h>
-
-int main()  {
-//algoritimo//
-int y; //ano
-int g; //numero aureo
-int c;//seculo
-int x1,z; //fator de correcao 1 e 2
-int e; //empacta
-int n;//lua cheia
-int d;//domingo de pascoa
-int bissexto;
-scanf("%d",&y);                  
-g = (y%19)+1;                             //%para pegar o resto
-c = (y/100)+1;
-x1 = ((3*c)/4)-12;
-z = (((8*c)+5)/25)-5;
-e =((11*g) + 20+z-x1)%30;
-if((e==25 && g>11)||(e==24)) //Condicao VI
-e++;
-n=44-e;
-if(n<21)
-n=n+30;
-d = ((5 * y)/4) - (x1+10);                            
-n= n=(n+7)-((d+n) % 7);
-if(n>31){
-printf("A pascoa sera dia %d de abril",(n-31));
-}
-else{
-printf("A pascoa sera dia %d de marco",n);
-}
-//algoritimo para saber se eh bissexto ou nao
-if(y%100==0){
-y=y/100;
-}
-else if(y%4 == 0){
-printf("eh bisssexto\n");
-
-
-//a partir daqui ta certo o esquema
 #include <stdio.h>                      //arrumando
 
 int i; //mesreferencial
@@ -50,7 +10,7 @@ char *months[]=
 {
     "Janeiro",
     "Fevereiro",
-    "Marco",
+    "Março",
     "Abril",
     "Maio",
     "Junho",
@@ -71,13 +31,13 @@ z = (((8*c)+5)/25)-5;
 e =((11*g) + 20+z-x)%30;
 if((e==25 && g>11)||(e==24)) 
 e++;
-n=44-e;
+n = 44-e;
 if(n<21)
 n=n+30;
 d = ((5 * y)/4) - (x+10);                            
-n= n=(n+7)-((d+n) % 7);
+n = (n+7)-((d+n) % 7);
 if(n>31){
-    n= n -31;
+    n = n -31;
 
     mes = 4;
     
@@ -98,7 +58,7 @@ else {
 
     bis = 0;
 }
-//1dejaneiro
+//1 de janeiro
     if(mes == 4){
         dia = 8 - ((n + bis + 31 + 28 + 31 ) % 7) ; 
     }
@@ -154,8 +114,6 @@ for (i = 0; i < 12; i++) { // para cada mês
     }
 }
 
-
-    /*escrever meses do dia*/
     for(j = 1; j < mesDias[i] + 1; j++){
 
         if(j <= 9){
@@ -167,7 +125,6 @@ for (i = 0; i < 12; i++) { // para cada mês
                 printf(" %d  ", j);
                 cont++;
             }
-
 
         }else{
             if(j == 10){
@@ -188,7 +145,6 @@ for (i = 0; i < 12; i++) { // para cada mês
             printf("\n|  ");
             cont = 0;
         }
-
     }
     printf("|-----------------------------|");
     printf("\n");
