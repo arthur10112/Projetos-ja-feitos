@@ -1,0 +1,16 @@
+Telas e coisas necessarias trabalho de progweb
+
+
+-Campo Minado-
+
+Tela inicial (Logar (usauario senha/criar conta)
+Tela de criar conta (nome completo, data de nascimento, CPF, telefone e e-mail, além do username (único) e da senha
+Tela de jogo
+	Jogar modo classico
+	Jogar modo rivotril
+	Instrucoes
+	Ranking pessoal (nome,grid usado,n de bomba,modo,tempo e resultado)
+	Rank global
+Tela pessoal
+Apos o jogar modo... precisa ter uma tela para escolher o tamanhodo grid
+Na tela de jogo precisa ter um botao de cheat

@@ -1,0 +1,50 @@
+body{
+	text-align: center;
+	font-family: sans-serif;
+	background-color: #d3ded3;
+}
+
+input {
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+input[type=submit] {
+  border: none;
+  padding: 5px;
+  background-color: #5fa15f;
+  color: white;
+  border-radius: 5px;
+}
+
+
+input[type=button] {
+	border: none;
+}
+
+.login { 
+	display: table-cell; 
+}
+
+.titulol{
+	margin-top: 8%;
+}
+
+#trap{
+    padding: 8px;
+}
+
+button{
+	padding: 5px;
+	border: none;
+  	padding: 5px;
+  	background-color: #5fa15f;
+
+  	border-radius: 5px;
+}	
+
+a{
+	text-decoration: none;
+	color: white;
+}

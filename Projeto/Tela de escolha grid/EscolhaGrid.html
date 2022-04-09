@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <script  src="sistema.js"></script>
+<title> Opcoes do jogo</title>
+</head>
+<body>
+
+<br><br><h1>Opcoes do jogo</h1><br><br>
+<div id="interface">
+	<form id="formulario" name="formulario" autocomplete="off" action="#" >
+	<label>Tamanho do Grid:</label>
+    <input type="number" id="grid" name="grid" min="1" max="100" onchange="gridvalor1.value=value; gridvalor2.value=value"><br><br>
+<p id="txtgrid"><output id="gridvalor1"> </output> x <output id="gridvalor2"> </output></p>
+    
+    
+	<label>Numero de Bombas:</label>
+			<input type="text" autocomplete="off" name="nbombas" placeholder='Numero de Bombas' title="Numero de Bombas" id="nbombas"><br><br>
+	<label>Modo de Jogo:</label>
+	<select id="mySelect" name="modo">
+  		<option value="Classico">Classico</option>
+  		<option value="Rivotril">Rivotril</option>
+ 
+	</select><br><br>
+    
+  </form>
+  	<input type="button" value="comecar" id="comecar" name="comecar" onClick="Comecar()"><br><br>
+  
+</div>
+
+</body>
+</html>
